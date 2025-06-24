@@ -8,7 +8,7 @@ The app is built using **Streamlit** and deployed publicly on Streamlit Cloud.
 
 ## 🚀 Demo
 
-🔗 [Click here to try the app](https://your-deployment-url.streamlit.app)
+🔗 [Click here to try the app](https://chat-with-pdf-07.streamlit.app/)
 
 > Upload a PDF and ask questions like:
 > - "What is this document about?"
