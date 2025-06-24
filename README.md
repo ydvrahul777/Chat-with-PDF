@@ -4,7 +4,7 @@ This is a simple and fast chatbot app that lets you **upload any PDF** and **ask
 
 The app is built using **Streamlit** and deployed publicly on Streamlit Cloud.
 
----
+
 
 ## 🚀 Demo
 
@@ -15,7 +15,7 @@ The app is built using **Streamlit** and deployed publicly on Streamlit Cloud.
 > - "Who is the author?"
 > - "Summarize section 2"
 
----
+
 
 ## 🧠 Features
 
@@ -26,21 +26,4 @@ The app is built using **Streamlit** and deployed publicly on Streamlit Cloud.
 - 💬 Keeps the last **5 Q&A pairs** in memory
 - 🌐 Deployable to **Streamlit Cloud** with your own API key
 
----
 
-## 🛠️ Tech Stack
-
-- [Streamlit](https://streamlit.io/) — UI framework
-- [Groq API](https://console.groq.com/) — LLM backend
-- [LLaMA-4 Scout 17B](https://groq.com) — fast and accurate LLM
-- [pdfplumber](https://github.com/jsvine/pdfplumber) — PDF text extraction
-
----
-
-## 📦 Local Setup
-
-1. **Clone the repo:**
-
-```bash
-git clone https://github.com/ydvrahul777/Chat-with-PDF.git
-cd Chat-with-PDF
