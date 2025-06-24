@@ -1,4 +1,4 @@
-# 📄 Chat with PDF using Groq's LLaMA-4 (Streamlit App)
+# 📄 Chat with PDF using LLaMA-4 
 
 This is a simple and fast chatbot app that lets you **upload any PDF** and **ask questions about its content** using the **Groq API + LLaMA-4 Scout 17B model**.
 
