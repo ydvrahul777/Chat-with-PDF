@@ -5,7 +5,7 @@ from groq import Groq
 st.set_page_config(page_title="PDF Chatbot", layout="wide")
 st.title("Chat with your PDF")
 
-GROQ_API_KEY="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"
+GROQ_API_KEY="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"
 client = Groq(api_key=GROQ_API_KEY)
 
 if "messages" not in st.session_state:
@@ -56,7 +56,7 @@ Answer:
             response_box = st.empty()
             with st.spinner("Thinking..."):
                 completion = client.chat.completions.create(
-                    model="meta-llama/llama-4-scout-17b-16e-instruct",
+                    model="openai/gpt-oss-20b",
                     messages=[{"role": "user", "content": prompt}],
                     temperature=0.7,
                     max_tokens=1024,
