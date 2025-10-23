@@ -74,8 +74,8 @@ Answer:
                 for chunk in completion:
                     print(chunk.choices[0].delta.content or "", end="")
                 
-                        st.session_state.messages.append({"role": "user", "content": user_question})
-                        st.session_state.messages.append({"role": "assistant", "content": response_text})
+                st.session_state.messages.append({"role": "user", "content": user_question})
+                st.session_state.messages.append({"role": "assistant", "content": response_text})
 
         if len(st.session_state.messages) > 10:
             st.session_state.messages = st.session_state.messages[-10:]
