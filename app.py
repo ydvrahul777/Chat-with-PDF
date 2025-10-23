@@ -57,18 +57,25 @@ Answer:
             with st.spinner("Thinking..."):
                 completion = client.chat.completions.create(
                     model="openai/gpt-oss-20b",
-                    messages=[{"role": "user", "content": prompt}],
-                    temperature=0.7,
-                    max_tokens=1024,
+                    messages=[
+                      {
+                        "role": "user",
+                        "content": ""
+                      }
+                    ],
+                    temperature=1,
+                    max_completion_tokens=8192,
+                    top_p=1,
+                    reasoning_effort="medium",
                     stream=True,
+                    stop=None
                 )
-                for chunk in completion:
-                    if chunk.choices[0].delta.content:
-                        response_text += chunk.choices[0].delta.content
-                        response_box.markdown(response_text)
 
-        st.session_state.messages.append({"role": "user", "content": user_question})
-        st.session_state.messages.append({"role": "assistant", "content": response_text})
+                for chunk in completion:
+                    print(chunk.choices[0].delta.content or "", end="")
+                
+                        st.session_state.messages.append({"role": "user", "content": user_question})
+                        st.session_state.messages.append({"role": "assistant", "content": response_text})
 
         if len(st.session_state.messages) > 10:
             st.session_state.messages = st.session_state.messages[-10:]
