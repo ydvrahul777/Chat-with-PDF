@@ -5,7 +5,6 @@ from groq import Groq
 st.set_page_config(page_title="PDF Chatbot", layout="wide")
 st.title("Chat with your PDF")
 
-GROQ_API_KEY="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"
 client = Groq(api_key=GROQ_API_KEY)
 
 if "messages" not in st.session_state:
